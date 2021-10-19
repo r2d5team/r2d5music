@@ -1,0 +1,26 @@
+header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #6552c6;
+} 
+.logoPágina {
+width: 20%;
+}
+.nombrePágina {
+width: 80%;
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 5%;
+} 
+.imgLogo {
+    width: 100%;
+}
+.títuloH2 {
+   font-size: 4vw;
+}
+h1 {
+    font-size: 5vw;
+    margin-bottom: 2%;
+}
