@@ -1,0 +1,9 @@
+.categorias-filtros {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  background-color: aqua;
+  z-index: 1;
+  overflow-x: scroll;
+}
