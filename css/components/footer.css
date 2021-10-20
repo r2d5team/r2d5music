@@ -6,7 +6,6 @@
   flex-wrap: nowrap;
 }
 
-.heart-icon {
-  width: 64px;
-  height: 67px;
+footer img {
+  width: 20px;
 }
