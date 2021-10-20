@@ -1,34 +1,32 @@
 .categorias-filtros {
-    background: color #f5f5f5;
-    z-index: 1;
-    display: flex;
-    justify-content: space-between;
-    overflow-x: scroll;
-    width: 100%;
-    height: 130px;
-    padding: 2%;
-    
+  background: color #f5f5f5;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  overflow-x: scroll;
+  width: 100%;
+  height: 130px;
+  padding: 2%;
 }
 
 .categoria {
-    width: var(--categoria-width);
-    border: 4px solid rgb(255, 255, 255);
-    height: 130px;
-    margin: 0 5% 0 5%;
-    padding: 2%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    background:#D8D4EC;
-    border: 2px solid #FFFFFF;
-    box-sizing: border-box;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
-    
+  width: var(--categoria-width);
+  border: 4px solid rgb(255, 255, 255);
+  height: 130px;
+  margin: 0 5% 0 5%;
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: #d8d4ec;
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
 }
 
 .categorias-filtros :hover {
-    background-color: #6552C6;
+  background-color: #6552c6;
 }
 
 .categoria-tittle {
@@ -38,12 +36,12 @@
 }
 
 .categorias-title-responsive {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .nav-title {
-    display: none;
-    overflow: hidden;
+  display: none;
+  overflow: hidden;
 }
 
 @media (min-width:450px ) {
@@ -109,4 +107,5 @@
         display: none;
     }
 }
+
 
