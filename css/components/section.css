@@ -1,0 +1,16 @@
+.main{
+    display: flex;
+}
+
+.categorias{
+    width: 110%;
+}
+
+@media (min-width:450px ){
+    .discos{
+        display: none;
+    }
+    .categorias{
+        width: 50%;
+    }
+}
