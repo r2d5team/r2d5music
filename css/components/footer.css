@@ -1,3 +1,4 @@
+/*para el mobil*/
 .footer {
   display: flex;
   flex-direction: row;
@@ -9,3 +10,4 @@
 footer img {
   width: 20px;
 }
+/*Para media query web quitar el boton de compra*/
