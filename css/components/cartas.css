@@ -1,0 +1,33 @@
+.cartas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: blue;
+}
+.carta {
+  background-color: white;
+  border: solid black;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  width: 250px;
+  height: 300px;
+}
+.carta footer {
+  display: flex;
+  justify-content: space-around;
+}
+.carta h3 {
+  font-size: 30px;
+  font-weight: bold;
+}
+.carta p {
+  font-size: 20px;
+  font-weight: bold;
+}
+.imagen-disco {
+  width: var(--imagen-disco-width);
+}
+.imagen-logo {
+  width: var(--imagen-logo-width);
+}

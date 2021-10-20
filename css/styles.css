@@ -1,5 +1,7 @@
 @import "reset.css";
+@import "variables.css";
 @import "components/nav.css";
-@import "/css/components/header.css"; 
-@import "variable.css";
-@import "/css/components/topventas.css"
+@import "components/topventas.css";
+@import "components/cartas.css";
+@import "components/header.css";
+@import "components/footer.css";
