@@ -1,5 +1,5 @@
 @import "reset.css";
 @import "components/nav.css";
-@import "/css/components/header.css"; 
-@import "variable.css";
-
+@import "components/cartas.css";
+@import "variables.css";
+@import "/css/components/header.css";
