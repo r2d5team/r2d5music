@@ -1,15 +1,108 @@
 .categorias-filtros {
-    background-color: rgb(225, 22, 22);
+    background: color #f5f5f5;
     z-index: 1;
     display: flex;
-    align-items: center;
-    flex-direction: row;
     justify-content: space-between;
-    overflow-x: auto;
+    overflow-x: scroll;
     width: 100%;
+    height: 130px;
+    padding: 2%;
     
 }
 
 .categoria {
-    margin: 10% 5% 0 5%;
+    width: var(--categoria-width);
+    border: 4px solid rgb(255, 255, 255);
+    height: 130px;
+    margin: 0 5% 0 5%;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background:#D8D4EC;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+    
 }
+
+.categorias-filtros :hover {
+    background-color: #6552C6;
+}
+
+h3 {
+    font-size: 1.2em;
+    margin-top: 10%;
+    
+}
+
+.categorias-title-responsive {
+    overflow: hidden;
+}
+
+.nav-title {
+    display: none;
+    overflow: hidden;
+}
+
+@media (min-width:450px ) {
+    
+    .categorias-filtros {
+        position: relative;
+        margin-top: 5%;
+        width: 40%;
+        height: 110vh;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        
+    }
+    .title-desktop-filter {
+        width: 99%;
+        border: 4px solid rgb(255, 255, 255);
+        background:#F5F5F5;
+        border: 2px solid #FFFFFF;
+        box-sizing: border-box;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+        font-size: 2em;
+        color: black;
+        height: 15vh;
+        display: flex;
+        justify-content: center;
+        
+    }
+    
+    .categoria {
+        width: var(--categoria-width);
+        height: 15vh;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        background-color: #F5F5F5;
+        margin: 1%;
+    }
+    
+    .categorias-filtros :hover {
+        background-color: #6552C6;
+    }
+    
+    h3 {
+        font-size: 1.5em;
+        margin-top: 2%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .nav-title {
+        font-size: 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    img {
+        display: none;
+    }
+}
+
