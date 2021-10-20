@@ -35,7 +35,7 @@ function crearCarta(disco) {
       src="${disco.src}"
       alt="Logo de Beauty_love_and_justice"
     />
-    <p>${disco.precio}</p>
+    <p>${disco.precio} €</p>
     <footer>
       <button>
         <img
@@ -53,6 +53,7 @@ function crearCarta(disco) {
       </button>
     </footer>`;
 }
+
 function filtrar(nombre) {
   let cartas = document.querySelector(".cartas");
   cartas.innerHTML = "";
@@ -63,3 +64,13 @@ function filtrar(nombre) {
     cartas.append(carta);
   });
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  let cartas = document.querySelector(".cartas");
+  cartas.innerHTML = "";
+  listaDiscos.forEach(function (disco) {
+    const carta = document.createElement("article");
+    carta.innerHTML = crearCarta(disco);
+    cartas.append(carta);
+  });
+});
