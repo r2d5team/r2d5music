@@ -1,7 +1,20 @@
-
-.article-ventas{
-    width: 100%;
+.article-ventas {
+  width: 150%;
+  height: 40vh;
 }
-.lista-topventas img{
-    width: 20%;
+.lista-topventas img {
+  width: 90%;
+}
+.top-ventas {
+  font-size: 3.4rem;
+  font-family: "Courier New", Courier, monospace;
+  margin: 5% 15% 0 15%;
+}
+
+.lista-topventas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin: 3%;
 }
