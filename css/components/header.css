@@ -2,7 +2,10 @@ header {
   display: flex;
   flex-direction: row;
   width: 100%;
-  background-color: #6552c6;
+  background-image: url(/Depositphotos_8480205_m-2015-compressor.jpg);
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-size: cover;
 }
 .logoPágina {
   width: 20%;

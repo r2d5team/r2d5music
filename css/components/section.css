@@ -1,16 +1,19 @@
-.main{
-    display: flex;
+.main {
+  display: flex;
 }
 
-.categorias{
-    width: 110%;
+.categorias {
+  width: 100%;
 }
 
-@media (min-width:450px ){
-    .discos{
-        display: none;
-    }
-    .categorias{
-        width: 50%;
-    }
+.nav-main-section {
+}
+
+@media (min-width: 450px) {
+  .discos {
+    display: none;
+  }
+  .categorias {
+    width: 50%;
+  }
 }
