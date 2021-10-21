@@ -4,7 +4,6 @@ let listaDiscos = [
     src: "/css/img/discos/Beauty_love_and_justice.jpg",
     titulo: "Ex1",
     precio: 4.99,
-    cantidad: 0,
     categoria: "pop",
   },
   {
@@ -12,7 +11,6 @@ let listaDiscos = [
     src: "/css/img/discos/Beauty_love_and_justice.jpg",
     titulo: "Ex2",
     precio: 21,
-    cantidad: 0,
     categoria: "rock",
   },
 ];
@@ -37,12 +35,15 @@ function crearCarta(disco) {
     />
     <p>${disco.precio} €</p>
     <footer>
-      <button>
+      <button onclick="addCarritoCompra(${disco.id})">
         <img
           class="imagen-logo"
           src="css/img/iconos/carrito-de-compras.png"
           alt="Logo carritos de compras"
         />
+      </button>
+      <button onclick="verFicha(${disco.id})">
+        Ver
       </button>
       <button>
         <img
@@ -55,22 +56,45 @@ function crearCarta(disco) {
 }
 
 function filtrar(nombre) {
-  let cartas = document.querySelector(".cartas");
-  cartas.innerHTML = "";
+  const main = document.querySelector("main");
+  main.innerHTML = "";
+  let cartas = document.createElement("article");
+  cartas.classList.add("cartas");
   let listaFiltrada = filtrarCategoria(listaDiscos, nombre);
   listaFiltrada.forEach(function (disco) {
     const carta = document.createElement("article");
     carta.innerHTML = crearCarta(disco);
     cartas.append(carta);
   });
+  main.append(cartas);
+}
+
+function crearFicha(disco) {
+  return `<h1>${disco.titulo}</h1>`;
+}
+
+function verFicha(id) {
+  listaDiscos.forEach(function (disco) {
+    if (disco.id === id) {
+      const main = document.querySelector("main");
+      main.innerHTML = "";
+      const ficha = document.createElement("article");
+      ficha.classList.add("ficha");
+      console.log(disco);
+      ficha.innerHTML = crearFicha(disco);
+      main.append(ficha);
+    }
+  });
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  let cartas = document.querySelector(".cartas");
-  cartas.innerHTML = "";
+  let cartas = document.createElement("article");
+  cartas.classList.add("cartas");
+  /* Una vez cargado la pag de inicio, mostrar todos los discos */
   listaDiscos.forEach(function (disco) {
     const carta = document.createElement("article");
     carta.innerHTML = crearCarta(disco);
     cartas.append(carta);
   });
+  document.querySelector("main").append(cartas);
 });
