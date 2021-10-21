@@ -1,5 +1,6 @@
-.main {
-  display: flex;
+main {
+  margin-left: 2%;
+  width: 70%;
 }
 
 .categorias {
@@ -7,13 +8,28 @@
 }
 
 .nav-main-section {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
-@media (min-width: 450px) {
+@media (max-width: 450px) {
   .discos {
     display: none;
   }
   .categorias {
-    width: 50%;
+    width: 100%;
+  }
+  .nav-main-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  .top-ventas {
+    font-size: 2.5em;
   }
 }

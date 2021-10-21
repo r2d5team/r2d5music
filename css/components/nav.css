@@ -48,7 +48,7 @@
 
 @media (min-width: 450px) {
   .categorias {
-    width: var(--categoria-width);
+    width: 100%;
   }
 
   .categorias-filtros {
