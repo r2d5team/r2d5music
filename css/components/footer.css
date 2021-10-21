@@ -7,10 +7,16 @@
 
 footer img {
   width: 20px;
+  margin-bottom: 0;
 }
 
 @media (max-width: 655px) {
   footer img {
     margin-bottom: 0;
+  }
+
+  .footer {
+    position: relative;
+    bottom: 0;
   }
 }

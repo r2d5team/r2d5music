@@ -2,7 +2,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: blue;
+  background-color: white;
   height: fit-content;
   overflow-x: scroll;
 }
