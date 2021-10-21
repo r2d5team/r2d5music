@@ -13,7 +13,7 @@ main {
   justify-content: space-between;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 655px) {
   .discos {
     display: none;
   }

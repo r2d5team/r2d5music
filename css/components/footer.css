@@ -3,9 +3,14 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  flex-wrap: nowrap;
 }
 
 footer img {
   width: 20px;
+}
+
+@media (max-width: 655px) {
+  footer img {
+    margin-bottom: 0;
+  }
 }
