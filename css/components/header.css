@@ -8,6 +8,8 @@ header {
   background-size: cover;
 }
 .logoPágina {
+  position: relative;
+  margin-left: 18%;
   width: 20%;
 }
 .nombrePágina {
