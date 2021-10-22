@@ -30,7 +30,26 @@
     </header>
     <nav class="categorias">
       <ul class="categorias-filtros">
-        <li class="categoria" data-nombre="rock" onclick="filtrar('rock')">
+        <li class="title-desktop-filter">
+          <h3 class="nav-title">Categorias</h3>
+        </li>
+        <li class="categoria">
+          <img
+            class="categoria_img"
+            src="/css/img/iconos/musica.png"
+            alt="Logo de Top ventas"
+          />
+          <h3 class="categoria-tittle">Top ventas</h3>
+        </li>
+        <li class="categoria" onclick="filtrar('jazz')">
+          <img
+            class="categoria_img"
+            src="/css/img/iconos/jazz.png"
+            alt="Logo de Jazz"
+          />
+          <h3 class="categoria-tittle">Jazz</h3>
+        </li>
+        <li class="categoria" onclick="filtrar('rock')">
           <img
             class="categoria_img"
             src="/css/img/iconos/rock.png"
@@ -38,9 +57,25 @@
           />
           <h3 class="categoria-tittle">Rock</h3>
         </li>
-        <li class="categoria" data-nombre="pop" onclick="filtrar('pop')">
+        <li class="categoria" onclick="filtrar('rap')">
+          <img
+            class="categoria_img"
+            src="/css/img/iconos/rap.png"
+            alt="Logo de Rap"
+          />
+          <h3 class="categoria-tittle">Rap</h3>
+        </li>
+        <li class="categoria" onclick="filtrar('pop')">
           <img class="categoria_img" src="/css/img/iconos/pop.png" alt="Pop" />
           <h3 class="categoria-tittle">Pop</h3>
+        </li>
+        <li class="categoria" onclick="filtrar('reggae')">
+          <img
+            class="categoria_img"
+            src="/css/img/iconos/reggae.png"
+            alt="Logo de Reggae"
+          />
+          <h3 class="categoria-tittle">Reggae</h3>
         </li>
       </ul>
     </nav>
@@ -49,11 +84,23 @@
         <h1 class="top-ventas">TOP VENTAS</h1>
         <ul class="lista-topventas">
           <li>
-            <img src="/css/img/discos/Beauty_love_and_justice.jpg" alt="" />
+            <img
+              src="/css/img/discos/Beauty_love_and_justice.jpg"
+              alt="Beauty_love_and_justice_Disco"
+            />
           </li>
-          <li><img src="/css/img/discos/Este es mi hip-hop.jpg" alt="" /></li>
-          <li><img src="/css/img/discos/Estoy perdido.jpg" alt="" /></li>
-          <li><img src="/css/img/discos/frozenframe.jpg" alt="" /></li>
+          <li>
+            <img src="/css/img/discos/Este es mi hip-hop.jpg" alt="Hiphop CD" />
+          </li>
+          <li>
+            <img
+              src="/css/img/discos/Estoy perdido.jpg"
+              alt="Estoy perdido CD"
+            />
+          </li>
+          <li>
+            <img src="/css/img/discos/Nuevo Mundo " alt="FrozenFrame CD" />
+          </li>
         </ul>
       </article>
       <!--<article class="cartas"></article>-->
