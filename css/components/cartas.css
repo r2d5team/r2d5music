@@ -1,8 +1,10 @@
 .cartas {
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin-top: 70px;
+  justify-content: space-between;
+  background-color: white;
+  height: fit-content;
+  overflow-x: scroll;
 }
 .cartas > article {
   background-color: white;
