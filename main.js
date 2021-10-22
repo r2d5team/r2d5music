@@ -43,7 +43,7 @@ let listaDiscos = [
   },
   {
     id: 6,
-    src: "/css/img/discos/Playgrouds.jpg",
+    src: "/css/img/discos/Playgrounds.jpg",
     titulo: "Playgrounds",
     precio: 2.99,
     categoria: "reggae",
