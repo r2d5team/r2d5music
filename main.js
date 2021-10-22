@@ -106,7 +106,7 @@ function filtrar(nombre) {
 
 function crearFicha(disco) {
   return `
-  <h1>${disco.titulo}</h1>
+  <h2>${disco.titulo}</h1>
     <img
       class="imagen-disco"
       src="${disco.src}"
@@ -120,9 +120,6 @@ function crearFicha(disco) {
           src="css/img/iconos/carrito-de-compras.png"
           alt="Logo carritos de compras"
         />
-      </button>
-      <button onclick="verFicha(${disco.id})">
-        Ver
       </button>
       <button>
         <img
