@@ -105,7 +105,16 @@ function filtrar(nombre) {
 }
 
 function crearFicha(disco) {
-  return `<h1>${disco.titulo}</h1>`;
+  return `
+  <article class="ficha">
+    <h1>${disco.titulo}</h1>
+    <img
+    class="imagen-disco"
+    src="${disco.src}"
+    alt="Logo de Beauty_love_and_justice"
+    />
+  </article>
+  `;
 }
 
 function verFicha(id) {
