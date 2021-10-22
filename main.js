@@ -106,14 +106,32 @@ function filtrar(nombre) {
 
 function crearFicha(disco) {
   return `
-  <article class="ficha">
-    <h1>${disco.titulo}</h1>
+  <h1>${disco.titulo}</h1>
     <img
-    class="imagen-disco"
-    src="${disco.src}"
-    alt="Logo de Beauty_love_and_justice"
+      class="imagen-disco"
+      src="${disco.src}"
+      alt="Logo de Beauty_love_and_justice"
     />
-  </article>
+    <h2>${disco.precio} €</h2>
+    <footer>
+      <button onclick="addCarritoCompra(${disco.id})">
+        <img
+          class="imagen-logo"
+          src="css/img/iconos/carrito-de-compras.png"
+          alt="Logo carritos de compras"
+        />
+      </button>
+      <button onclick="verFicha(${disco.id})">
+        Ver
+      </button>
+      <button>
+        <img
+          class="imagen-logo"
+          src="css/img/iconos/me-gusta.png"
+          alt="Logo carritos de compras"
+        />
+      </button>
+    </footer>
   `;
 }
 
