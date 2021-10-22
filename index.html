@@ -12,6 +12,7 @@
     />
     <title>Document</title>
     <link rel="stylesheet" href="./styles.css" />
+    <script src="main.js"></script>
   </head>
   <body>
     <header>
@@ -40,7 +41,7 @@
           />
           <h3 class="categoria-tittle">Top ventas</h3>
         </li>
-        <li class="categoria">
+        <li class="categoria" onclick="filtrar('jazz')">
           <img
             class="categoria_img"
             src="/css/img/iconos/jazz.png"
@@ -48,7 +49,7 @@
           />
           <h3 class="categoria-tittle">Jazz</h3>
         </li>
-        <li class="categoria">
+        <li class="categoria" onclick="filtrar('rock')">
           <img
             class="categoria_img"
             src="/css/img/iconos/rock.png"
@@ -56,7 +57,7 @@
           />
           <h3 class="categoria-tittle">Rock</h3>
         </li>
-        <li class="categoria">
+        <li class="categoria" onclick="filtrar('rap')">
           <img
             class="categoria_img"
             src="/css/img/iconos/rap.png"
@@ -64,11 +65,11 @@
           />
           <h3 class="categoria-tittle">Rap</h3>
         </li>
-        <li class="categoria">
+        <li class="categoria" onclick="filtrar('pop')">
           <img class="categoria_img" src="/css/img/iconos/pop.png" alt="Pop" />
           <h3 class="categoria-tittle">Pop</h3>
         </li>
-        <li class="categoria">
+        <li class="categoria" onclick="filtrar('reggae')">
           <img
             class="categoria_img"
             src="/css/img/iconos/reggae.png"
@@ -102,133 +103,7 @@
           </li>
         </ul>
       </article>
-      <article class="cartas">
-        <article class="carta">
-          <h3>Title</h3>
-          <img
-            class="imagen-disco"
-            src="/css/img/discos/Beauty_love_and_justice.jpg"
-            alt="Logo de Beauty_love_and_justice"
-          />
-          <p>Precio</p>
-          <footer>
-            <button>
-              <img
-                class="imagen-logo"
-                src="css/img/iconos/carrito-de-compras.png"
-                alt="Logo carritos de compras"
-              />
-            </button>
-            <button>
-              <img
-                class="imagen-logo"
-                src="css/img/iconos/me-gusta.png"
-                alt="Logo carritos de compras"
-              />
-            </button>
-          </footer>
-        </article>
-        <article class="carta">
-          <h3>Title</h3>
-          <img
-            class="imagen-disco"
-            src="/css/img/discos/Beauty_love_and_justice.jpg"
-            alt="Logo de Beauty_love_and_justice"
-          />
-          <p>Precio</p>
-          <footer>
-            <button>
-              <img
-                class="imagen-logo"
-                src="css/img/iconos/carrito-de-compras.png"
-                alt="Logo carritos de compras"
-              />
-            </button>
-            <button>
-              <img
-                class="imagen-logo"
-                src="css/img/iconos/me-gusta.png"
-                alt="Logo carritos de compras"
-              />
-            </button>
-          </footer>
-        </article>
-        <article class="carta">
-          <h3>Title</h3>
-          <img
-            class="imagen-disco"
-            src="/css/img/discos/Beauty_love_and_justice.jpg"
-            alt="Logo de Beauty_love_and_justice"
-          />
-          <p>Precio</p>
-          <footer>
-            <button>
-              <img
-                class="imagen-logo"
-                src="css/img/iconos/carrito-de-compras.png"
-                alt="Logo carritos de compras"
-              />
-            </button>
-            <button>
-              <img
-                class="imagen-logo"
-                src="css/img/iconos/me-gusta.png"
-                alt="Logo carritos de compras"
-              />
-            </button>
-          </footer>
-        </article>
-        <article class="carta">
-          <h3>Title</h3>
-          <img
-            class="imagen-disco"
-            src="/css/img/discos/Beauty_love_and_justice.jpg"
-            alt="Logo de Beauty_love_and_justice"
-          />
-          <p>Precio</p>
-          <footer>
-            <button>
-              <img
-                class="imagen-logo"
-                src="css/img/iconos/carrito-de-compras.png"
-                alt="Logo carritos de compras"
-              />
-            </button>
-            <button>
-              <img
-                class="imagen-logo"
-                src="css/img/iconos/me-gusta.png"
-                alt="Logo carritos de compras"
-              />
-            </button>
-          </footer>
-        </article>
-        <article class="carta">
-          <h3>Title</h3>
-          <img
-            class="imagen-disco"
-            src="/css/img/discos/Beauty_love_and_justice.jpg"
-            alt="Logo de Beauty_love_and_justice"
-          />
-          <p>Precio</p>
-          <footer>
-            <button>
-              <img
-                class="imagen-logo"
-                src="css/img/iconos/carrito-de-compras.png"
-                alt="Logo carritos de compras"
-              />
-            </button>
-            <button>
-              <img
-                class="imagen-logo"
-                src="css/img/iconos/me-gusta.png"
-                alt="Logo carritos de compras"
-              />
-            </button>
-          </footer>
-        </article>
-      </article>
+      <!--<article class="cartas"></article>-->
     </main>
     <footer>
       <ul class="footer">
